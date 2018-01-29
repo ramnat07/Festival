@@ -15,14 +15,16 @@ class Artist {
     var beginDate: Date
     var beginHour: Date
     var description: String
-    
     var stage: Stage
+    var artistImage: UIImage
     
-    init(name:String, beginDate:Date, beginHour:Date, description: String, stage: Stage) {
+    init(name:String, beginDate:Date, beginHour:Date, description: String, stage: Stage, artistImageName:String ) {
         self.name = name
         self.beginDate = beginDate
         self.beginHour = beginHour
         self.description = description
         self.stage = stage
+        self.artistImage = UIImage.init(named: artistImageName)!
+        
     }
 }
