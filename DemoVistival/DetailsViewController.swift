@@ -26,7 +26,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        self.title = artist?.name
         artistImage.image = artist?.artistImage
         //https://stackoverflow.com/questions/24701075/swift-convert-enum-value-to-string        
         stageLabel.text = artist?.stage.rawValue                   //"\(artist?.stage)"
