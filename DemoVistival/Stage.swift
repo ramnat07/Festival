@@ -8,11 +8,13 @@
 
 import Foundation
 
-enum Stage{
+enum Stage:String{
 
  case STAGE_1
  case STAGE_2
  case STAGE_3
  case STAGE_4
+    
+
     
 }

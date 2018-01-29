@@ -28,7 +28,8 @@ class DetailsViewController: UIViewController {
 
         
         artistImage.image = artist?.artistImage
-        stageLabel.text = "\(artist?.stage)"
+        //https://stackoverflow.com/questions/24701075/swift-convert-enum-value-to-string        
+        stageLabel.text = artist?.stage.rawValue                   //"\(artist?.stage)"
         artistDescription.text = artist?.description
         
         
