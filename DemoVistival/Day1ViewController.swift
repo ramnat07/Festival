@@ -18,22 +18,55 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     var artistLijst:[Artist] = [Artist]()
     
     let formatter = DateFormatter()
+    //let dateFormat = DateFormatter()
+    
+    
+    // let dateFormat = DateFormatter.init();
+    //dateFormat.dateStyle = .medium
+    //let geformateerdeDatum:String = dateFormat.string(from: birthDate)
+    
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
-        
         formatter.dateFormat = "dd/MM/yyyy"
         let day1 = formatter.date(from: "27/01/2018")
         
-        formatter.dateFormat = "HH:mm"
-        let hour1 = formatter.date(from:"13:00")
-        let hour2 = formatter.date(from: "13:30")
-        let hour3 = formatter.date(from: "14:00")
-        let hour4 = formatter.date(from: "14:30")
+        formatter.dateStyle = .short
+        formatter.timeStyle = .none
+        formatter.locale = Locale.init(identifier: "UK")
+        let geformateerdeDatum:String = formatter.string(from: day1!)
+        
+        
+        
+        
+        
+        
+        
+        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object  
+        
+        formatter.dateFormat = "dd/MM/yyyy HH:mm"
+        
+        
+        let hour1 = formatter.date(from:"27/01/2018 13:00")
+        let hour2 = formatter.date(from: "27/01/2018 13:30")
+        let hour3 = formatter.date(from: "27/01/2018 14:00")
+        let hour4 = formatter.date(from: "27/01/2018 14:30")
+        
+        
+        
+        self.title = geformateerdeDatum
+        
+        
+        
+        
+        
+        
+        
+       
+        
         
         
         artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1!, beginHour: hour1!, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1!, beginHour:hour2! , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"),
