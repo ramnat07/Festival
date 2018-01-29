@@ -15,6 +15,7 @@ class Day2ViewController: UIViewController, UITableViewDelegate, UITableViewData
     let formatter = DateFormatter()
     
     
+    @IBOutlet weak var tableview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,4 +64,35 @@ class Day2ViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         return cell!
 }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destination: Details2ViewController = segue.destination as! Details2ViewController
+        
+        let cell = sender as! UITableViewCell
+        
+        let index = tableview.indexPath(for: cell)?.row
+        
+        let doortegevenArtist = artistLijst[index!]
+        destination.artist = doortegevenArtist
+        
+
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

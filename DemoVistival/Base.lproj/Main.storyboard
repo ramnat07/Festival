@@ -323,15 +323,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableview" destination="ua0-jM-9aT" id="Evk-HF-6tD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GuF-x4-9gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1638" y="609"/>
         </scene>
-        <!--View Controller-->
+        <!--Details2 View Controller-->
         <scene sceneID="jhm-ff-LNc">
             <objects>
-                <viewController id="Eeb-wo-WCL" sceneMemberID="viewController">
+                <viewController id="Eeb-wo-WCL" customClass="Details2ViewController" customModule="DemoVistival" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ycI-NA-6yn"/>
                         <viewControllerLayoutGuide type="bottom" id="KSc-de-XEV"/>
@@ -377,6 +380,11 @@
                             <constraint firstAttribute="bottom" secondItem="qte-iy-Agi" secondAttribute="bottom" constant="20" symbolic="YES" id="m9R-JN-fmS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="qte-iy-Agi" id="XxH-58-fMu"/>
+                        <outlet property="imageArtist" destination="XAX-NJ-xM0" id="kOR-cx-WgT"/>
+                        <outlet property="stageLabel" destination="5mF-FU-Wzo" id="xje-ca-UES"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="485-6r-kzg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
