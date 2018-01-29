@@ -10,6 +10,11 @@ import UIKit
 
 class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    
+    @IBOutlet weak var tableview: UITableView!
+    
+    
     var artistLijst:[Artist] = [Artist]()
     
     let formatter = DateFormatter()
@@ -65,14 +70,24 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        let destination: DetailsViewController = segue.destination as! DetailsViewController
+        
+        let cell = sender as! UITableViewCell
+        let index = tableview.indexPath(for: cell)?.row
+        let doorTeGevenArtist = artistLijst[index!]
+        
+        destination.artist = doorTeGevenArtist
+        
+        
     }
-    */
+    
 
 }

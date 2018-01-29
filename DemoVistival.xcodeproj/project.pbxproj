@@ -19,6 +19,7 @@
 		41885BC1201F528A00F12F25 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BC0201F528A00F12F25 /* Artist.swift */; };
 		41885BC5201F549000F12F25 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BC4201F549000F12F25 /* Stage.swift */; };
 		41885BCA201F6CD500F12F25 /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 41885BC9201F6CD500F12F25 /* jezus.jpg */; };
+		41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCB201F71DC00F12F25 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		41885BC0201F528A00F12F25 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		41885BC4201F549000F12F25 /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		41885BC9201F6CD500F12F25 /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../../../../Downloads/jezus.jpg; sourceTree = "<group>"; };
+		41885BCB201F71DC00F12F25 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 				41885BBA201F4CBD00F12F25 /* Day1ViewController.swift */,
 				41885BBC201F4CCB00F12F25 /* Day2ViewController.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
+				41885BCB201F71DC00F12F25 /* DetailsViewController.swift */,
 			);
 			path = DemoVistival;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				41885BAE201F318D00F12F25 /* DemoVistival.xcdatamodeld in Sources */,
 				41885BBB201F4CBD00F12F25 /* Day1ViewController.swift in Sources */,
+				41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */,
 				41885BC5201F549000F12F25 /* Stage.swift in Sources */,
 				41885BA8201F318D00F12F25 /* ViewController.swift in Sources */,
 				41885BBF201F515300F12F25 /* MapsViewController.swift in Sources */,
