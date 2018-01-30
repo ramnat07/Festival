@@ -20,6 +20,8 @@ class Day2ViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "Day Two"
+        
         //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
         
         formatter.dateFormat = "dd/MM/yyyy"

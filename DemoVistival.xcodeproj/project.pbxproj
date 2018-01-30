@@ -21,6 +21,7 @@
 		41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCB201F71DC00F12F25 /* DetailsViewController.swift */; };
 		41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCD201F77B700F12F25 /* Details2ViewController.swift */; };
 		49CEBEB3202060370002537A /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49CEBEB2202060370002537A /* jezus.jpg */; };
+		49CEBEB5202061740002537A /* ArtistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEBEB4202061740002537A /* ArtistList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		41885BCB201F71DC00F12F25 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		41885BCD201F77B700F12F25 /* Details2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details2ViewController.swift; sourceTree = "<group>"; };
 		49CEBEB2202060370002537A /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../jezus.jpg; sourceTree = "<group>"; };
+		49CEBEB4202061740002537A /* ArtistList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			children = (
 				41885BC6201F575D00F12F25 /* Classes */,
 				49CEBEB2202060370002537A /* jezus.jpg */,
+				49CEBEB4202061740002537A /* ArtistList.swift */,
 				41885BA5201F318D00F12F25 /* AppDelegate.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
 				41885BCD201F77B700F12F25 /* Details2ViewController.swift */,
@@ -172,6 +175,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CEBEB5202061740002537A /* ArtistList.swift in Sources */,
 				41885BAE201F318D00F12F25 /* DemoVistival.xcdatamodeld in Sources */,
 				41885BBB201F4CBD00F12F25 /* Day1ViewController.swift in Sources */,
 				41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */,

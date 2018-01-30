@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import MapKit
 
-class MapsViewController: UIViewController {
+
+class MapsViewController: UIViewController, MKMapViewDelegate {
+    
+    
+    
+    @IBOutlet weak var mapview: MKMapView!
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
