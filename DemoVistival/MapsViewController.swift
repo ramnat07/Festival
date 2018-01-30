@@ -32,6 +32,9 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
     
     func createPins () {
     
+        
+        
+        //stages
         let stage1Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158080, 2.758124)
         let stage1Point = MapPoint.init(pinColor: UIColor.blue, coord: stage1Coord , title: Stage.STAGE_1.rawValue)
         
@@ -44,10 +47,56 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         let stage4Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.156573, 2.761418)
         let stage4Point = MapPoint.init(pinColor: UIColor.blue, coord: stage4Coord , title: Stage.STAGE_4.rawValue)
         
+        
+        
+        //standjes
+        let standje1Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.159049, 2.764658)
+        let standje1Point = MapPoint.init(pinColor: UIColor.green, coord: standje1Coord , title: "Panda's Chinese loempias")
+        
+        let standje2Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.157017, 2.762963)
+        let standje2Point = MapPoint.init(pinColor: UIColor.green, coord: standje2Coord , title: "Luigi's gehaktballen")
+        
+        let standje3Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.157327, 2.765302)
+        let standje3Point = MapPoint.init(pinColor: UIColor.green, coord: standje3Coord , title: "Jos' wafels")
+        
+        let standje4Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158363, 2.760345)
+        let standje4Point = MapPoint.init(pinColor: UIColor.green, coord: standje4Coord , title: "Ivans vodka")
+        
+        
+        //wc
+        
+        let wc1Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158201, 2.762963)
+        let wc1Point = MapPoint.init(pinColor: UIColor.red, coord: wc1Coord , title: "WC")
+        
+        let wc2Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.157206, 2.760066)
+        let wc2Point = MapPoint.init(pinColor: UIColor.red, coord: wc2Coord , title: "WC")
+        
+        
+        
+        // wc experiment
+        
+        /*let wc3Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.156599, 2.761545)
+        let wc3Point = MapPoint.init(coord: wc3Coord, title: "WC", imageNaam: "wc.jpg")
+*/
+        
         mapView.addAnnotation(stage1Point)
         mapView.addAnnotation(stage2Point)
         mapView.addAnnotation(stage3Point)
         mapView.addAnnotation(stage4Point)
+        
+        mapView.addAnnotation(standje1Point)
+        mapView.addAnnotation(standje2Point)
+        mapView.addAnnotation(standje3Point)
+        mapView.addAnnotation(standje4Point)
+        
+        mapView.addAnnotation(wc1Point)
+        mapView.addAnnotation(wc2Point)
+        
+        /*//experiment toevoegen
+        mapView.addAnnotation(wc3Point)
+        */
+        
+        
         
         
     }
@@ -78,6 +127,9 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
                 view.animatesDrop = true
                 view.pinTintColor = myAnnotation.pinColor
                 
+                /*//experiment
+                view.image = myAnnotation.image
+                */
                 return view
             }
         }

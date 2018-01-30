@@ -10,6 +10,8 @@
 		4160BD542020720100EC2DF7 /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4160BD532020720100EC2DF7 /* jezus.jpg */; };
 		4160BD56202077AE00EC2DF7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD55202077AE00EC2DF7 /* NewsViewController.swift */; };
 		4160BD58202081F200EC2DF7 /* MapPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD57202081F200EC2DF7 /* MapPoints.swift */; };
+		4160BD5A2020AE6A00EC2DF7 /* wc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4160BD592020AE6A00EC2DF7 /* wc.jpg */; };
+		4160BD5C2020B2F900EC2DF7 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD5B2020B2F900EC2DF7 /* News.swift */; };
 		41885BA6201F318D00F12F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA5201F318D00F12F25 /* AppDelegate.swift */; };
 		41885BA8201F318D00F12F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA7201F318D00F12F25 /* ViewController.swift */; };
 		41885BAB201F318D00F12F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41885BA9201F318D00F12F25 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		4160BD532020720100EC2DF7 /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../../Desktop/jezus.jpg; sourceTree = "<group>"; };
 		4160BD55202077AE00EC2DF7 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		4160BD57202081F200EC2DF7 /* MapPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPoints.swift; sourceTree = "<group>"; };
+		4160BD592020AE6A00EC2DF7 /* wc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wc.jpg; path = ../../wc.jpg; sourceTree = "<group>"; };
+		4160BD5B2020B2F900EC2DF7 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		41885BA2201F318D00F12F25 /* DemoVistival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoVistival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41885BA5201F318D00F12F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41885BA7201F318D00F12F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4160BD532020720100EC2DF7 /* jezus.jpg */,
+				4160BD592020AE6A00EC2DF7 /* wc.jpg */,
 				41885BC6201F575D00F12F25 /* Classes */,
 				41885BA5201F318D00F12F25 /* AppDelegate.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
@@ -86,12 +91,12 @@
 				41885BBA201F4CBD00F12F25 /* Day1ViewController.swift */,
 				41885BA7201F318D00F12F25 /* ViewController.swift */,
 				4160BD57202081F200EC2DF7 /* MapPoints.swift */,
+				4160BD55202077AE00EC2DF7 /* NewsViewController.swift */,
 				41885BA9201F318D00F12F25 /* Main.storyboard */,
 				41885BAF201F318D00F12F25 /* Assets.xcassets */,
 				41885BB1201F318D00F12F25 /* LaunchScreen.storyboard */,
 				41885BB4201F318D00F12F25 /* Info.plist */,
 				41885BAC201F318D00F12F25 /* DemoVistival.xcdatamodeld */,
-				4160BD55202077AE00EC2DF7 /* NewsViewController.swift */,
 			);
 			path = DemoVistival;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			children = (
 				41885BC0201F528A00F12F25 /* Artist.swift */,
 				41885BC4201F549000F12F25 /* Stage.swift */,
+				4160BD5B2020B2F900EC2DF7 /* News.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4160BD5A2020AE6A00EC2DF7 /* wc.jpg in Resources */,
 				41885BB3201F318D00F12F25 /* LaunchScreen.storyboard in Resources */,
 				4160BD542020720100EC2DF7 /* jezus.jpg in Resources */,
 				41885BB0201F318D00F12F25 /* Assets.xcassets in Resources */,
@@ -189,6 +196,7 @@
 				41885BA6201F318D00F12F25 /* AppDelegate.swift in Sources */,
 				4160BD58202081F200EC2DF7 /* MapPoints.swift in Sources */,
 				41885BBD201F4CCB00F12F25 /* Day2ViewController.swift in Sources */,
+				4160BD5C2020B2F900EC2DF7 /* News.swift in Sources */,
 				41885BC1201F528A00F12F25 /* Artist.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
