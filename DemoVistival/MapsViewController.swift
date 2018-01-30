@@ -26,7 +26,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
             locationManager.requestWhenInUseAuthorization()
         }
     
-    
+
     }
     
 
@@ -34,6 +34,14 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         super.viewDidLoad()
 
         checkLocationOk()
+        
+        let centerCoord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158269, 2.760753)
+        
+        let centerSpan = MKCoordinateSpanMake(0.010, 0.010)
+        
+        let centerRegion = MKCoordinateRegionMake(centerCoord, centerSpan)
+        
+        mapView.region = centerRegion
     }
 
     override func didReceiveMemoryWarning() {
