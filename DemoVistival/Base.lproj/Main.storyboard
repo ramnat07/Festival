@@ -382,6 +382,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yJ9-PU-ixG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="660"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0zK-hl-5eE" id="GZg-Jf-2BP"/>
+                                </connections>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

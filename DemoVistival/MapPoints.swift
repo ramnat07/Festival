@@ -9,16 +9,17 @@
 import Foundation
 import MapKit
 
-class MapPoint:NSObject, MKAnnotation{
+class MapPoint:NSObject, MKAnnotation {
 
     var coordinate: CLLocationCoordinate2D
-    
+    var pinColor: UIColor
     var title: String?
     
-    init(coord: CLLocationCoordinate2D, title: String) {
+    init(pinColor:UIColor,coord: CLLocationCoordinate2D, title: String) {
         
     self.coordinate = coord
     self.title = title
+    self.pinColor = pinColor
     }
 
 

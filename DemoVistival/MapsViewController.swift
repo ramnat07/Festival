@@ -31,18 +31,18 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
     
     
     func createPins () {
-        
+    
         let stage1Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158080, 2.758124)
-        let stage1Point = MapPoint.init(coord: stage1Coord , title: Stage.STAGE_1.rawValue)
+        let stage1Point = MapPoint.init(pinColor: UIColor.blue, coord: stage1Coord , title: Stage.STAGE_1.rawValue)
         
         let stage2Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.157354, 2.764744)
-        let stage2Point = MapPoint.init(coord: stage2Coord , title: Stage.STAGE_2.rawValue)
+        let stage2Point = MapPoint.init(pinColor: UIColor.blue, coord: stage2Coord , title: Stage.STAGE_2.rawValue)
         
         let stage3Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.159238, 2.761890)
-        let stage3Point = MapPoint.init(coord: stage3Coord , title: Stage.STAGE_3.rawValue)
+        let stage3Point = MapPoint.init(pinColor: UIColor.blue, coord: stage3Coord , title: Stage.STAGE_3.rawValue)
         
         let stage4Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.156573, 2.761418)
-        let stage4Point = MapPoint.init(coord: stage4Coord , title: Stage.STAGE_4.rawValue)
+        let stage4Point = MapPoint.init(pinColor: UIColor.blue, coord: stage4Coord , title: Stage.STAGE_4.rawValue)
         
         mapView.addAnnotation(stage1Point)
         mapView.addAnnotation(stage2Point)
@@ -50,6 +50,40 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         mapView.addAnnotation(stage4Point)
         
         
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        //eerst gaan kijken van welke type is de annotatie?
+        //en dan ik een variabele voor de annotatie
+        //if let -> initialeseert variabele en kijkt meteen na of alles correct is angemaakt
+        if let myAnnotation = annotation as? MapPoint{
+            
+            //ik ga kijken of er al een opmaak was, indien ja -> hergebruiken,zo niet -> aanmaken
+            //deque -> verwacht identiefier om te weten welke opmaak
+            let identifier = "Pin"
+            
+            if let view = mapView.dequeueReusableAnnotationView(withIdentifier: identifier){
+                //opmaak bestond
+                view.annotation = myAnnotation
+                
+                return view
+            }
+            else{
+                //opmaak bestond nog niet, aanmaken!
+                let view = MKPinAnnotationView(annotation: myAnnotation, reuseIdentifier:identifier)
+                
+                //nu de view is gemaakt kan alles gefinetuned worden
+                view.canShowCallout = true
+                view.animatesDrop = true
+                view.pinTintColor = myAnnotation.pinColor
+                
+                return view
+            }
+        }
+        
+        return nil
+ 
     }
     
     
