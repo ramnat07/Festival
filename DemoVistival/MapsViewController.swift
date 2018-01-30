@@ -29,11 +29,38 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
 
     }
     
-
+    
+    func createPins () {
+        
+        let stage1Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158080, 2.758124)
+        let stage1Point = MapPoint.init(coord: stage1Coord , title: Stage.STAGE_1.rawValue)
+        
+        let stage2Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.157354, 2.764744)
+        let stage2Point = MapPoint.init(coord: stage2Coord , title: Stage.STAGE_2.rawValue)
+        
+        let stage3Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.159238, 2.761890)
+        let stage3Point = MapPoint.init(coord: stage3Coord , title: Stage.STAGE_3.rawValue)
+        
+        let stage4Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.156573, 2.761418)
+        let stage4Point = MapPoint.init(coord: stage4Coord , title: Stage.STAGE_4.rawValue)
+        
+        mapView.addAnnotation(stage1Point)
+        mapView.addAnnotation(stage2Point)
+        mapView.addAnnotation(stage3Point)
+        mapView.addAnnotation(stage4Point)
+        
+        
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         checkLocationOk()
+        createPins()
         
         let centerCoord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.158269, 2.760753)
         
@@ -48,6 +75,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

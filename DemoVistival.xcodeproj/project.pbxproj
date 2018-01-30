@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4160BD542020720100EC2DF7 /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4160BD532020720100EC2DF7 /* jezus.jpg */; };
 		4160BD56202077AE00EC2DF7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD55202077AE00EC2DF7 /* NewsViewController.swift */; };
+		4160BD58202081F200EC2DF7 /* MapPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD57202081F200EC2DF7 /* MapPoints.swift */; };
 		41885BA6201F318D00F12F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA5201F318D00F12F25 /* AppDelegate.swift */; };
 		41885BA8201F318D00F12F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA7201F318D00F12F25 /* ViewController.swift */; };
 		41885BAB201F318D00F12F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41885BA9201F318D00F12F25 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		4160BD532020720100EC2DF7 /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../../Desktop/jezus.jpg; sourceTree = "<group>"; };
 		4160BD55202077AE00EC2DF7 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		4160BD57202081F200EC2DF7 /* MapPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPoints.swift; sourceTree = "<group>"; };
 		41885BA2201F318D00F12F25 /* DemoVistival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoVistival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41885BA5201F318D00F12F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41885BA7201F318D00F12F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				41885BBC201F4CCB00F12F25 /* Day2ViewController.swift */,
 				41885BBA201F4CBD00F12F25 /* Day1ViewController.swift */,
 				41885BA7201F318D00F12F25 /* ViewController.swift */,
+				4160BD57202081F200EC2DF7 /* MapPoints.swift */,
 				41885BA9201F318D00F12F25 /* Main.storyboard */,
 				41885BAF201F318D00F12F25 /* Assets.xcassets */,
 				41885BB1201F318D00F12F25 /* LaunchScreen.storyboard */,
@@ -184,6 +187,7 @@
 				41885BBF201F515300F12F25 /* MapsViewController.swift in Sources */,
 				41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */,
 				41885BA6201F318D00F12F25 /* AppDelegate.swift in Sources */,
+				4160BD58202081F200EC2DF7 /* MapPoints.swift in Sources */,
 				41885BBD201F4CCB00F12F25 /* Day2ViewController.swift in Sources */,
 				41885BC1201F528A00F12F25 /* Artist.swift in Sources */,
 			);
