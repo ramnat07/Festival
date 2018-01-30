@@ -28,9 +28,11 @@ class Details2ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = artist?.name
+        
         imageArtist.image = artist?.artistImage
         
-        stageLabel.text = "\(artist?.stage)"
+        stageLabel.text = "Performing on " + (artist?.stage.rawValue)!                  //"\(artist?.stage)"
         
         descriptionLabel.text = artist?.description
 
