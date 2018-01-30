@@ -57,8 +57,8 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        self.title = geformateerdeDatum
-        
+        //self.title = geformateerdeDatum
+        self.title = "Day One"
         
         
         

@@ -20,7 +20,7 @@
 		41885BC5201F549000F12F25 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BC4201F549000F12F25 /* Stage.swift */; };
 		41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCB201F71DC00F12F25 /* DetailsViewController.swift */; };
 		41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCD201F77B700F12F25 /* Details2ViewController.swift */; };
-		491606C6201FB35F0046CA9A /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 491606C5201FB35F0046CA9A /* jezus.jpg */; };
+		49CEBEB3202060370002537A /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49CEBEB2202060370002537A /* jezus.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		41885BC4201F549000F12F25 /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		41885BCB201F71DC00F12F25 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		41885BCD201F77B700F12F25 /* Details2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details2ViewController.swift; sourceTree = "<group>"; };
-		491606C5201FB35F0046CA9A /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../../Desktop/jezus.jpg; sourceTree = "<group>"; };
+		49CEBEB2202060370002537A /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../jezus.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				41885BC6201F575D00F12F25 /* Classes */,
-				491606C5201FB35F0046CA9A /* jezus.jpg */,
+				49CEBEB2202060370002537A /* jezus.jpg */,
 				41885BA5201F318D00F12F25 /* AppDelegate.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
 				41885BCD201F77B700F12F25 /* Details2ViewController.swift */,
@@ -159,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41885BB3201F318D00F12F25 /* LaunchScreen.storyboard in Resources */,
-				491606C6201FB35F0046CA9A /* jezus.jpg in Resources */,
+				49CEBEB3202060370002537A /* jezus.jpg in Resources */,
 				41885BB0201F318D00F12F25 /* Assets.xcassets in Resources */,
 				41885BAB201F318D00F12F25 /* Main.storyboard in Resources */,
 			);
