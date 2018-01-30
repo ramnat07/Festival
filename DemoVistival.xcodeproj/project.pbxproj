@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4160BD542020720100EC2DF7 /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4160BD532020720100EC2DF7 /* jezus.jpg */; };
+		4160BD56202077AE00EC2DF7 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4160BD55202077AE00EC2DF7 /* NewsViewController.swift */; };
 		41885BA6201F318D00F12F25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA5201F318D00F12F25 /* AppDelegate.swift */; };
 		41885BA8201F318D00F12F25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BA7201F318D00F12F25 /* ViewController.swift */; };
 		41885BAB201F318D00F12F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41885BA9201F318D00F12F25 /* Main.storyboard */; };
@@ -20,11 +22,11 @@
 		41885BC5201F549000F12F25 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BC4201F549000F12F25 /* Stage.swift */; };
 		41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCB201F71DC00F12F25 /* DetailsViewController.swift */; };
 		41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCD201F77B700F12F25 /* Details2ViewController.swift */; };
-		49CEBEB3202060370002537A /* jezus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49CEBEB2202060370002537A /* jezus.jpg */; };
-		49CEBEB5202061740002537A /* ArtistList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CEBEB4202061740002537A /* ArtistList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4160BD532020720100EC2DF7 /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../../Desktop/jezus.jpg; sourceTree = "<group>"; };
+		4160BD55202077AE00EC2DF7 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		41885BA2201F318D00F12F25 /* DemoVistival.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoVistival.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41885BA5201F318D00F12F25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41885BA7201F318D00F12F25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		41885BC4201F549000F12F25 /* Stage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 		41885BCB201F71DC00F12F25 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		41885BCD201F77B700F12F25 /* Details2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details2ViewController.swift; sourceTree = "<group>"; };
-		49CEBEB2202060370002537A /* jezus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jezus.jpg; path = ../../jezus.jpg; sourceTree = "<group>"; };
-		49CEBEB4202061740002537A /* ArtistList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,8 @@
 		41885BA4201F318D00F12F25 /* DemoVistival */ = {
 			isa = PBXGroup;
 			children = (
+				4160BD532020720100EC2DF7 /* jezus.jpg */,
 				41885BC6201F575D00F12F25 /* Classes */,
-				49CEBEB2202060370002537A /* jezus.jpg */,
-				49CEBEB4202061740002537A /* ArtistList.swift */,
 				41885BA5201F318D00F12F25 /* AppDelegate.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
 				41885BCD201F77B700F12F25 /* Details2ViewController.swift */,
@@ -89,6 +88,7 @@
 				41885BB1201F318D00F12F25 /* LaunchScreen.storyboard */,
 				41885BB4201F318D00F12F25 /* Info.plist */,
 				41885BAC201F318D00F12F25 /* DemoVistival.xcdatamodeld */,
+				4160BD55202077AE00EC2DF7 /* NewsViewController.swift */,
 			);
 			path = DemoVistival;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41885BB3201F318D00F12F25 /* LaunchScreen.storyboard in Resources */,
-				49CEBEB3202060370002537A /* jezus.jpg in Resources */,
+				4160BD542020720100EC2DF7 /* jezus.jpg in Resources */,
 				41885BB0201F318D00F12F25 /* Assets.xcassets in Resources */,
 				41885BAB201F318D00F12F25 /* Main.storyboard in Resources */,
 			);
@@ -175,11 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49CEBEB5202061740002537A /* ArtistList.swift in Sources */,
 				41885BAE201F318D00F12F25 /* DemoVistival.xcdatamodeld in Sources */,
 				41885BBB201F4CBD00F12F25 /* Day1ViewController.swift in Sources */,
 				41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */,
 				41885BC5201F549000F12F25 /* Stage.swift in Sources */,
+				4160BD56202077AE00EC2DF7 /* NewsViewController.swift in Sources */,
 				41885BA8201F318D00F12F25 /* ViewController.swift in Sources */,
 				41885BBF201F515300F12F25 /* MapsViewController.swift in Sources */,
 				41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */,

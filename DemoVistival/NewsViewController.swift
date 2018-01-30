@@ -1,39 +1,19 @@
 //
-//  MapsViewController.swift
+//  NewsViewController.swift
 //  DemoVistival
 //
-//  Created by mobapp07 on 29/01/2018.
+//  Created by mobapp07 on 30/01/2018.
 //  Copyright © 2018 mobapp07. All rights reserved.
 //
 
 import UIKit
-import MapKit
 
-
-class MapsViewController: UIViewController, MKMapViewDelegate {
-    
-    @IBOutlet weak var mapView: MKMapView!
-    
-    var locationManager:CLLocationManager = CLLocationManager()
-    
-    
-    func checkLocationOk() {
-    
-        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-            mapView.showsUserLocation = true;
-        }
-        else{
-            locationManager.requestWhenInUseAuthorization()
-        }
-    
-    
-    }
-    
+class NewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        checkLocationOk()
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
