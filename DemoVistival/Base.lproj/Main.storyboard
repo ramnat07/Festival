@@ -45,19 +45,34 @@
                                     <segue destination="S2z-0i-ea5" kind="show" id="31Y-sP-jUT"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-CB-Fj7">
-                                <rect key="frame" x="67" y="130" width="240" height="128"/>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Buu-gT-4zc">
+                                <rect key="frame" x="67" y="193" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="1HW-YM-9U2" appends="YES" id="WcY-0K-Yff"/>
+                                    <outletCollection property="gestureRecognizers" destination="Uph-yx-aK9" appends="YES" id="u4g-Ed-sHJ"/>
+                                </connections>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="2iy-4y-92C"/>
                     <connections>
-                        <outlet property="logoImageView" destination="jaO-CB-Fj7" id="exn-IR-pdp"/>
+                        <outlet property="imageview" destination="Buu-gT-4zc" id="AtC-ec-Hvb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="1HW-YM-9U2" userLabel="leftSwipe Gesture Recognizer">
+                    <connections>
+                        <action selector="leftSwipe:" destination="BYZ-38-t0r" id="g58-tM-Jku"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="Uph-yx-aK9" userLabel="rightSwipe Gesture Recognizer">
+                    <connections>
+                        <action selector="rightSwipe:" destination="BYZ-38-t0r" id="s1L-zA-4nQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1727.2" y="-137.18140929535232"/>
         </scene>

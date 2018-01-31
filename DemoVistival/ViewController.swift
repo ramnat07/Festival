@@ -11,14 +11,36 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var logoImageView: UIImageView!
+    
+    @IBOutlet weak var imageview: UIImageView!
+    
+    //vergeet niet om "User Interaction Enabled" aan te vinken in attribute inspector van imageview
+    var fotoLijst:[UIImage] = [UIImage]()
+    var index:Int = 0
+    
+    func loadImages() {
+        let img1:UIImage = UIImage.init(named: "jezus.jpg")!
+        let img2:UIImage = UIImage.init(named: "festivalFoto.jpg")!
+        let img3:UIImage = UIImage.init(named: "jezus.jpg")!
+        let img4:UIImage = UIImage.init(named: "festivalFoto.jpg")!
+        
+        fotoLijst += [img1,img2,img3,img4]
+        
+        imageview.image = fotoLijst[index]
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.title = "Vistival"
         
-        logoImageView.image = UIImage.init(named: "jezus.jpg")
+        loadImages()
+        
+        
+        
+        
         
     }
 
@@ -26,7 +48,30 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    @IBAction func leftSwipe(_ sender: UISwipeGestureRecognizer) {
+        if index > 0 {
+            index -= 1
+        }
+        else {
+            index = fotoLijst.count - 1
+        }
+        imageview.image = fotoLijst[index]
+    }
 
-
+    
+    @IBAction func rightSwipe(_ sender: UISwipeGestureRecognizer) {
+        if index < fotoLijst.count - 1 {
+            index += 1
+        }
+        else {
+            index = 0
+        }
+        imageview.image = fotoLijst[index]
+    }
+    
+   
 }
 

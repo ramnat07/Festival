@@ -27,6 +27,7 @@
 		41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCD201F77B700F12F25 /* Details2ViewController.swift */; };
 		49EE9AC620220C4C00543538 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE9AC520220C4C00543538 /* InfoViewController.swift */; };
 		49EE9AC8202232D000543538 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 49EE9AC7202232D000543538 /* icons */; };
+		49EE9ACA2022419B00543538 /* festivalFoto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49EE9AC92022419B00543538 /* festivalFoto.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		41885BCD201F77B700F12F25 /* Details2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details2ViewController.swift; sourceTree = "<group>"; };
 		49EE9AC520220C4C00543538 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		49EE9AC7202232D000543538 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../Downloads/icons; sourceTree = "<group>"; };
+		49EE9AC92022419B00543538 /* festivalFoto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = festivalFoto.jpg; path = ../../../Desktop/festivalFoto.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				4160BD532020720100EC2DF7 /* jezus.jpg */,
+				49EE9AC92022419B00543538 /* festivalFoto.jpg */,
 				41885BC6201F575D00F12F25 /* Classes */,
 				41885BA5201F318D00F12F25 /* AppDelegate.swift */,
 				41885BBE201F515300F12F25 /* MapsViewController.swift */,
@@ -179,6 +182,7 @@
 				41885BB3201F318D00F12F25 /* LaunchScreen.storyboard in Resources */,
 				4160BD542020720100EC2DF7 /* jezus.jpg in Resources */,
 				41885BB0201F318D00F12F25 /* Assets.xcassets in Resources */,
+				49EE9ACA2022419B00543538 /* festivalFoto.jpg in Resources */,
 				49EE9AC8202232D000543538 /* icons in Resources */,
 				41885BAB201F318D00F12F25 /* Main.storyboard in Resources */,
 			);
