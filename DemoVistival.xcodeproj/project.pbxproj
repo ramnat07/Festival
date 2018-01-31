@@ -96,12 +96,12 @@
 				4160BD57202081F200EC2DF7 /* MapPoints.swift */,
 				4160BD55202077AE00EC2DF7 /* NewsViewController.swift */,
 				4160BD5D2020BA9F00EC2DF7 /* NewsDetailViewController.swift */,
+				49EE9AC520220C4C00543538 /* InfoViewController.swift */,
 				41885BA9201F318D00F12F25 /* Main.storyboard */,
 				41885BAF201F318D00F12F25 /* Assets.xcassets */,
 				41885BB1201F318D00F12F25 /* LaunchScreen.storyboard */,
 				41885BB4201F318D00F12F25 /* Info.plist */,
 				41885BAC201F318D00F12F25 /* DemoVistival.xcdatamodeld */,
-				49EE9AC520220C4C00543538 /* InfoViewController.swift */,
 			);
 			path = DemoVistival;
 			sourceTree = "<group>";

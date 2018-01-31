@@ -9,11 +9,36 @@
 import UIKit
 
 class InfoViewController: UIViewController {
+    
+    
+    @IBOutlet weak var infoImageView: UIImageView!
+    
+    
+    @IBOutlet weak var infoTextView: UITextView!
+    
+    var infoText:String = ""
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.title = "Info"
+        
+        infoText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        
+        //textview opvullen met text
+        infoText += infoText + infoText + infoText
+        
+        
+        
+        infoImageView.image = UIImage.init(named: "jezus.jpg")
+        infoTextView.text = infoText
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

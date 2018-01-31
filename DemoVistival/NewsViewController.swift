@@ -16,8 +16,9 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     var newsLijst: [News] = [News]()
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    func loadNews() {
+        
         
         let string1:String = "Grammys 2018 Winners: The Complete List"
         let string2:String = "41 Things You Didn't See on TV at Grammys 2018"
@@ -45,15 +46,25 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         
         
         
-
+        
         newsLijst = [News.init(title: string1, datum: "27/01/2018", body:body1, newsImageName: "jezus.jpg"),
-        News.init(title: string2, datum:"27/01/2018" , body: body2, newsImageName: "jezus.jpg"),
-        News.init(title: string3, datum:"27/01/2018", body: body3, newsImageName: "jezus.jpg"),
-        News.init(title: string4, datum: "28/01/2018", body: body4, newsImageName: "jezus.jpg"),
-        News.init(title: string5, datum: "28/01/2018", body: body5, newsImageName: "jezus.jpg")]
+                     News.init(title: string2, datum:"27/01/2018" , body: body2, newsImageName: "jezus.jpg"),
+                     News.init(title: string3, datum:"27/01/2018", body: body3, newsImageName: "jezus.jpg"),
+                     News.init(title: string4, datum: "28/01/2018", body: body4, newsImageName: "jezus.jpg"),
+                     News.init(title: string5, datum: "28/01/2018", body: body5, newsImageName: "jezus.jpg")]
         
         //scherm opvullen met newsitems
         newsLijst += newsLijst + newsLijst + newsLijst
+       
+        
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "News"
+        loadNews()
     }
 
     override func didReceiveMemoryWarning() {

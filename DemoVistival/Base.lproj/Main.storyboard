@@ -508,6 +508,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="m3h-7J-hhO"/>
+                    <connections>
+                        <outlet property="infoImageView" destination="3gb-np-fLN" id="yel-hf-4w6"/>
+                        <outlet property="infoTextView" destination="yJ7-UR-zt7" id="Xci-X8-zGt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K5t-iR-1kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
