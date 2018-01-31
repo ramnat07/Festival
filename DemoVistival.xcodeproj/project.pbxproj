@@ -26,6 +26,7 @@
 		41885BCC201F71DC00F12F25 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCB201F71DC00F12F25 /* DetailsViewController.swift */; };
 		41885BCE201F77B700F12F25 /* Details2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41885BCD201F77B700F12F25 /* Details2ViewController.swift */; };
 		49EE9AC620220C4C00543538 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE9AC520220C4C00543538 /* InfoViewController.swift */; };
+		49EE9AC8202232D000543538 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 49EE9AC7202232D000543538 /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		41885BCB201F71DC00F12F25 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		41885BCD201F77B700F12F25 /* Details2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Details2ViewController.swift; sourceTree = "<group>"; };
 		49EE9AC520220C4C00543538 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		49EE9AC7202232D000543538 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../Downloads/icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				41885BC0201F528A00F12F25 /* Artist.swift */,
 				41885BC4201F549000F12F25 /* Stage.swift */,
 				4160BD5B2020B2F900EC2DF7 /* News.swift */,
+				49EE9AC7202232D000543538 /* icons */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				41885BB3201F318D00F12F25 /* LaunchScreen.storyboard in Resources */,
 				4160BD542020720100EC2DF7 /* jezus.jpg in Resources */,
 				41885BB0201F318D00F12F25 /* Assets.xcassets in Resources */,
+				49EE9AC8202232D000543538 /* icons in Resources */,
 				41885BAB201F318D00F12F25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
