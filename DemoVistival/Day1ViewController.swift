@@ -18,6 +18,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     var artistLijst:[Artist] = [Artist]()
     
     let formatter = DateFormatter()
+    
     //let dateFormat = DateFormatter()
     
     
@@ -25,19 +26,58 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     //dateFormat.dateStyle = .medium
     //let geformateerdeDatum:String = dateFormat.string(from: birthDate)
     
-    
+    func loadArtist() {
+        
+        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
+        
+        /*formatter.dateFormat = "dd/MM/yyyy"
+        let day1:Date = formatter.date(from: "27/01/2018")!
+        let day1String:String = formatter.string(from: day1)
+        
+        
+        
+        
+        formatter.dateFormat = "dd/MM/yyyy HH:mm"
+        let hour1:Date = formatter.date(from:"27/01/2018 13:00")!
+        let hour1String:String = formatter.string(from: hour1)
+        
+        
+        let hour2:Date = formatter.date(from: "27/01/2018 13:30")!
+        let hour2String:String = formatter.string(from: hour2)
+        
+        let hour3:Date = formatter.date(from: "27/01/2018 14:00")!
+        let hour3String:String = formatter.string(from: hour3)
+        
+        let hour4:Date = formatter.date(from: "27/01/2018 14:30")!
+        let hour4String:String = formatter.string(from: hour4)
+ 
+ */
+        
+        /*formatter.dateStyle = .short
+         formatter.timeStyle = .none
+         formatter.locale = Locale.init(identifier: "UK")
+         let geformateerdeDatum:String = formatter.string(from: day1!)
+         
+         */
+        
+        let day1:String = "27/01/2018"
+        let hour1:String = "13:00"
+        let hour2:String = "13:30"
+        let hour3:String = "14:00"
+        let hour4:String = "14:30"
+        
+        
+        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: "Madonna, volledige naam Madonna Louise Veronica Ciccone", stage: Stage.STAGE_3, artistImageName: "jezus.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: "sexy zanger", stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        
+    }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        formatter.dateFormat = "dd/MM/yyyy"
-        let day1 = formatter.date(from: "27/01/2018")
         
-        formatter.dateStyle = .short
-        formatter.timeStyle = .none
-        formatter.locale = Locale.init(identifier: "UK")
-        let geformateerdeDatum:String = formatter.string(from: day1!)
+        
+        loadArtist()
         
         
         
@@ -45,19 +85,10 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object  
-        
-        formatter.dateFormat = "dd/MM/yyyy HH:mm"
-        
-        
-        let hour1 = formatter.date(from:"27/01/2018 13:00")
-        let hour2 = formatter.date(from: "27/01/2018 13:30")
-        let hour3 = formatter.date(from: "27/01/2018 14:00")
-        let hour4 = formatter.date(from: "27/01/2018 14:30")
         
         
         
-        //self.title = geformateerdeDatum
+        
         self.title = "Day One"
         
         
@@ -69,9 +100,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1!, beginHour: hour1!, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1!, beginHour:hour2! , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"),
-        Artist.init(name: "Madonna", beginDate: day1!, beginHour: hour3!, description: "Madonna, volledige naam Madonna Louise Veronica Ciccone", stage: Stage.STAGE_3, artistImageName: "jezus.jpg"),
-        Artist.init(name: "Sting", beginDate: day1!, beginHour: hour4!, description: "sexy zanger", stage: .STAGE_4, artistImageName: "jezus.jpg")]
+       
         
         
         
@@ -96,7 +125,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         let currentArtist: Artist = artistLijst[indexPath.row]
         
         cell?.textLabel?.text = currentArtist.name
-        cell?.detailTextLabel?.text = "\(currentArtist.beginHour)"
+        cell?.detailTextLabel?.text = currentArtist.beginHour
         cell?.imageView?.image = currentArtist.artistImage
         
         return cell!

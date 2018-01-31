@@ -12,13 +12,13 @@ import UIKit
 class Artist {
 
     var name: String
-    var beginDate: Date
-    var beginHour: Date
+    var beginDate: String
+    var beginHour: String
     var description: String
     var stage: Stage
     var artistImage: UIImage
     
-    init(name:String, beginDate:Date, beginHour:Date, description: String, stage: Stage, artistImageName:String ) {
+    init(name:String, beginDate:String, beginHour:String, description: String, stage: Stage, artistImageName:String ) {
         self.name = name
         self.beginDate = beginDate
         self.beginHour = beginHour

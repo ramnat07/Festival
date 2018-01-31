@@ -17,14 +17,12 @@ class Day2ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var tableview: UITableView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.title = "Day Two"
-        
+    
+    
+    func loadArtist(){
         //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
         
-        formatter.dateFormat = "dd/MM/yyyy"
+        /*formatter.dateFormat = "dd/MM/yyyy"
         let day2 = formatter.date(from: "28/01/2018")
         
         formatter.dateFormat = "HH:mm"
@@ -32,11 +30,33 @@ class Day2ViewController: UIViewController, UITableViewDelegate, UITableViewData
         let hour2 = formatter.date(from: "13:30")
         let hour3 = formatter.date(from: "14:00")
         let hour4 = formatter.date(from: "14:30")
+ */
+        
+        let day2:String = "28/01/2018"
+        let hour1:String = "12:00"
+        let hour2:String = "12:30"
+        let hour3:String = "13:00"
+        let hour4:String = "13:30"
         
         
-        artistLijst = [Artist.init(name: "Eminem", beginDate: day2!, beginHour: hour1!, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Lorde", beginDate: day2!, beginHour:hour2! , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"),
-                       Artist.init(name: "Jay-Z", beginDate: day2!, beginHour: hour3!, description: "Madonna, volledige naam Madonna Louise Veronica Ciccone", stage: Stage.STAGE_3, artistImageName: "jezus.jpg"),
-                       Artist.init(name: "Enrique Iglesias ", beginDate: day2!, beginHour: hour4!, description: "sexy zanger", stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        
+        artistLijst = [Artist.init(name: "Eminem", beginDate: day2, beginHour: hour1, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Lorde", beginDate: day2, beginHour:hour2 , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"),
+                       Artist.init(name: "Jay-Z", beginDate: day2, beginHour: hour3, description: "Madonna, volledige naam Madonna Louise Veronica Ciccone", stage: Stage.STAGE_3, artistImageName: "jezus.jpg"),
+                       Artist.init(name: "Enrique Iglesias ", beginDate: day2, beginHour: hour4, description: "sexy zanger", stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        
+
+        
+        
+        
+    }
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        loadArtist()
+        
+        self.title = "Day Two"
         
         
         
