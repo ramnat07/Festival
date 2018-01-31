@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4KU-c6-xVn">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4KU-c6-xVn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -373,21 +373,21 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y2M-kn-uXG">
-                                                    <rect key="frame" x="87" y="4" width="34" height="21"/>
+                                                    <rect key="frame" x="64" y="4" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4bg-l9-9zx">
-                                                    <rect key="frame" x="87" y="25" width="44" height="15"/>
+                                                    <rect key="frame" x="64" y="25" width="44" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jezus.jpg" id="7NC-Wp-649">
-                                                    <rect key="frame" x="15" y="0.0" width="57" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="34" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -480,6 +480,25 @@
             </objects>
             <point key="canvasLocation" x="1695.2" y="1596.2518740629687"/>
         </scene>
+        <!--Info-->
+        <scene sceneID="xrF-ZE-e7t">
+            <objects>
+                <viewController id="IBh-HQ-0Rw" customClass="InfoViewController" customModule="DemoVistival" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0Da-Yo-DMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="7HM-nZ-RXG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7dQ-Ye-drh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" id="i8x-Ns-dY3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K5t-iR-1kZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="797"/>
+        </scene>
         <!--Map-->
         <scene sceneID="jsM-Or-ZBs">
             <objects>
@@ -530,6 +549,7 @@
                         <segue destination="ZoH-1a-sJD" kind="relationship" relationship="viewControllers" id="bor-Er-pjq"/>
                         <segue destination="qnA-m5-u7x" kind="relationship" relationship="viewControllers" id="N7y-Ww-gWt"/>
                         <segue destination="0zK-hl-5eE" kind="relationship" relationship="viewControllers" id="XxR-K6-35m"/>
+                        <segue destination="IBh-HQ-0Rw" kind="relationship" relationship="viewControllers" id="kXd-Nb-WY7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQb-L0-fkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -557,6 +577,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jezus.jpg" width="620" height="465"/>
+        <image name="jezus.jpg" width="360" height="450"/>
     </resources>
 </document>
