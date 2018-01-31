@@ -19,21 +19,29 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var string1:String = "Grammys 2018 Winners: The Complete List"
-        var string2:String = "41 Things You Didn't See on TV at Grammys 2018"
-        var string3:String = "Grammys 2018 Performances: From Lady Gaga to 'Despacito' and More"
-        var string4:String = "Grammys 2018: Photos From The Red Carpet"
-        var string5:String = "Grammys 2018: The Party Diary"
+        let string1:String = "Grammys 2018 Winners: The Complete List"
+        let string2:String = "41 Things You Didn't See on TV at Grammys 2018"
+        let string3:String = "Grammys 2018 Performances: From Lady Gaga to 'Despacito' and More"
+        let string4:String = "Grammys 2018: Photos From The Red Carpet"
+        let string5:String = "Grammys 2018: The Party Diary"
         
-        var body1:String = "While JAY-Z entered Sunday as the top nominee, it was Bruno Mars and Kendrick Lamar who left the night's biggest winners. But with 80-plus awards to hand out, there were plenty of victors."
         
-        var body2:String = "While JAY-Z entered Sunday as the top nominee, it was Bruno Mars and Kendrick Lamar who left the night's biggest winners. But with 80-plus awards to hand out, there were plenty of victors."
+        var bodyText:String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         
-        var body3:String = "While JAY-Z entered Sunday as the top nominee, it was Bruno Mars and Kendrick Lamar who left the night's biggest winners. But with 80-plus awards to hand out, there were plenty of victors."
+        //body opvullen met text
+        bodyText += bodyText + bodyText
         
-        var body4:String = "While JAY-Z entered Sunday as the top nominee, it was Bruno Mars and Kendrick Lamar who left the night's biggest winners. But with 80-plus awards to hand out, there were plenty of victors."
         
-        var body5:String = "While JAY-Z entered Sunday as the top nominee, it was Bruno Mars and Kendrick Lamar who left the night's biggest winners. But with 80-plus awards to hand out, there were plenty of victors."
+        
+        let body1:String = bodyText
+        
+        let body2:String = bodyText
+        
+        let body3:String = bodyText
+        
+        let body4:String = bodyText
+        
+        let body5:String = bodyText
         
         
         
@@ -43,6 +51,9 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         News.init(title: string3, datum:"27/01/2018", body: body3, newsImageName: "jezus.jpg"),
         News.init(title: string4, datum: "28/01/2018", body: body4, newsImageName: "jezus.jpg"),
         News.init(title: string5, datum: "28/01/2018", body: body5, newsImageName: "jezus.jpg")]
+        
+        //scherm opvullen met newsitems
+        newsLijst += newsLijst + newsLijst + newsLijst
     }
 
     override func didReceiveMemoryWarning() {

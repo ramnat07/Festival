@@ -21,6 +21,8 @@ class NewsDetailViewController: UIViewController {
     
     @IBOutlet weak var newsBodyTextView: UITextView!
     
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

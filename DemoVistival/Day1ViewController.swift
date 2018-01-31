@@ -17,7 +17,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var artistLijst:[Artist] = [Artist]()
     
-    let formatter = DateFormatter()
+    //let formatter = DateFormatter()
     
     //let dateFormat = DateFormatter()
     
@@ -66,8 +66,15 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         let hour3:String = "14:00"
         let hour4:String = "14:30"
         
+        var artistDescription:String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         
-        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: "popArtist_blabla", stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: "klassicArtist_blabla", stage: Stage.STAGE_2, artistImageName: "jezus.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: "Madonna, volledige naam Madonna Louise Veronica Ciccone", stage: Stage.STAGE_3, artistImageName: "jezus.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: "sexy zanger", stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        //artistDescription textView opvullen
+        artistDescription += artistDescription + artistDescription
+        
+        
+        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: artistDescription, stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: artistDescription, stage: Stage.STAGE_2, artistImageName: "jezus.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: artistDescription, stage: Stage.STAGE_3, artistImageName: "jezus.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: artistDescription, stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        //scherm opvullen met artiesten
+        artistLijst += artistLijst + artistLijst + artistLijst
         
     }
     
@@ -75,38 +82,9 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         loadArtist()
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        self.title = "Day One"
-        
-        
-        
-        
-        
-        
-       
-        
-        
-        
-       
-        
-        
-        
-        
-
-        // Do any additional setup after loading the view.
+         self.title = "Day One"
+     
     }
 
     override func didReceiveMemoryWarning() {
@@ -125,7 +103,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         let currentArtist: Artist = artistLijst[indexPath.row]
         
         cell?.textLabel?.text = currentArtist.name
-        cell?.detailTextLabel?.text = currentArtist.beginHour
+        cell?.detailTextLabel?.text = currentArtist.beginHour + " on " + currentArtist.stage.rawValue
         cell?.imageView?.image = currentArtist.artistImage
         
         return cell!
