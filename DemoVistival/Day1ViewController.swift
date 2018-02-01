@@ -72,7 +72,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         artistDescription += artistDescription + artistDescription
         
         
-        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: artistDescription, stage: Stage.STAGE_1, artistImageName: "jezus.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: artistDescription, stage: Stage.STAGE_2, artistImageName: "jezus.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: artistDescription, stage: Stage.STAGE_3, artistImageName: "jezus.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: artistDescription, stage: .STAGE_4, artistImageName: "jezus.jpg")]
+        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: artistDescription, stage: Stage.STAGE_1, artistImageName: "britney1.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: artistDescription, stage: Stage.STAGE_2, artistImageName: "celine1.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: artistDescription, stage: Stage.STAGE_3, artistImageName: "madonna1.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: artistDescription, stage: .STAGE_4, artistImageName: "sting1.jpg")]
         //scherm opvullen met artiesten
         artistLijst += artistLijst + artistLijst + artistLijst
         

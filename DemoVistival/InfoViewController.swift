@@ -34,7 +34,7 @@ class InfoViewController: UIViewController {
         
         
         
-        infoImageView.image = UIImage.init(named: "jezus.jpg")
+        infoImageView.image = UIImage.init(named: "Home.png")
         infoTextView.text = infoText
         
         

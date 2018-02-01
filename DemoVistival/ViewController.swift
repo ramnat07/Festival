@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     var index:Int = 0
     
     func loadImages() {
-        let img1:UIImage = UIImage.init(named: "jezus.jpg")!
-        let img2:UIImage = UIImage.init(named: "festivalFoto.jpg")!
-        let img3:UIImage = UIImage.init(named: "jezus.jpg")!
-        let img4:UIImage = UIImage.init(named: "festivalFoto.jpg")!
+        let img1:UIImage = UIImage.init(named: "Home.png")!
+        let img2:UIImage = UIImage.init(named: "Home.png")!
+        let img3:UIImage = UIImage.init(named: "Home.png")!
+        let img4:UIImage = UIImage.init(named: "Home.png")!
         
         fotoLijst += [img1,img2,img3,img4]
         

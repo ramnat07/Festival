@@ -25,6 +25,8 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         let string3:String = "Grammys 2018 Performances: From Lady Gaga to 'Despacito' and More"
         let string4:String = "Grammys 2018: Photos From The Red Carpet"
         let string5:String = "Grammys 2018: The Party Diary"
+        let string6:String = "41 Things You Didn't See on TV at Grammys 2018"
+
         
         
         var bodyText:String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -32,26 +34,19 @@ class NewsViewController: UIViewController, UITableViewDelegate,UITableViewDataS
         //body opvullen met text
         bodyText += bodyText + bodyText
         
-        
-        
+        //indien je hebt meerdere body`s dan mag je nog extra body toevoegen,bv body1,2,3...
         let body1:String = bodyText
         
-        let body2:String = bodyText
-        
-        let body3:String = bodyText
-        
-        let body4:String = bodyText
-        
-        let body5:String = bodyText
         
         
         
         
-        newsLijst = [News.init(title: string1, datum: "27/01/2018", body:body1, newsImageName: "jezus.jpg"),
-                     News.init(title: string2, datum:"27/01/2018" , body: body2, newsImageName: "jezus.jpg"),
-                     News.init(title: string3, datum:"27/01/2018", body: body3, newsImageName: "jezus.jpg"),
-                     News.init(title: string4, datum: "28/01/2018", body: body4, newsImageName: "jezus.jpg"),
-                     News.init(title: string5, datum: "28/01/2018", body: body5, newsImageName: "jezus.jpg")]
+        newsLijst = [News.init(title: string1, datum: "27/01/2018", body:body1, newsImageName: "news1.jpg"),
+                     News.init(title: string2, datum:"27/01/2018" , body: body1, newsImageName: "news2.jpg"),
+                     News.init(title: string3, datum:"27/01/2018", body: body1, newsImageName: "news1.jpg"),
+                     News.init(title: string4, datum: "28/01/2018", body: body1, newsImageName: "news2.jpg"),
+                     News.init(title: string5, datum: "28/01/2018", body: body1, newsImageName: "news1.jpg"),
+                     News.init(title: string6, datum: "28/01/2018", body: body1, newsImageName: "news2.jpg")]
         
         //scherm opvullen met newsitems
         newsLijst += newsLijst + newsLijst + newsLijst
