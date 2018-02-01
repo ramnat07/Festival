@@ -42,7 +42,7 @@
                                     <segue destination="S2z-0i-ea5" kind="show" id="31Y-sP-jUT"/>
                                 </connections>
                             </button>
-                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Buu-gT-4zc">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Buu-gT-4zc">
                                 <rect key="frame" x="0.0" y="64" width="375" height="238"/>
                                 <gestureRecognizers/>
                                 <connections>
@@ -128,18 +128,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VQO-zW-n7X" id="skH-qy-K4o">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="48.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="48"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sJi-ZG-Jof">
-                                                    <rect key="frame" x="15" y="5" width="36.5" height="23.5"/>
+                                                    <rect key="frame" x="15" y="4" width="37" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jXa-p6-T6N">
-                                                    <rect key="frame" x="15" y="28.5" width="42" height="16.5"/>
+                                                    <rect key="frame" x="15" y="28" width="42" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -181,12 +181,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3ZR-JF-xqJ">
-                                <rect key="frame" x="16" y="72" width="343" height="267"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="275"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4e-1O-VeD">
                                 <rect key="frame" x="16" y="358" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="j7u-Z8-Zp1"/>
+                                    <constraint firstAttribute="height" constant="40" id="CwB-Ve-sLD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -208,7 +208,7 @@
                                 <rect key="frame" x="16" y="406" width="343" height="241"/>
                                 <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="241" id="ZCX-CG-X6q"/>
+                                    <constraint firstAttribute="height" constant="241" id="6kt-y0-Uvk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -216,20 +216,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CFN-nA-N7r" firstAttribute="top" secondItem="3ZR-JF-xqJ" secondAttribute="bottom" constant="18" id="2Ia-SP-sta"/>
-                            <constraint firstItem="Jvu-yh-8OY" firstAttribute="top" secondItem="CFN-nA-N7r" secondAttribute="bottom" constant="5" id="Abx-kf-HSr"/>
-                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="trailing" secondItem="Q33-oq-O7C" secondAttribute="trailingMargin" id="J3C-Fs-OyC"/>
-                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="top" secondItem="jcp-vI-8Vo" secondAttribute="bottom" constant="8" symbolic="YES" id="KEL-lT-bLv"/>
-                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="leading" secondItem="j4e-1O-VeD" secondAttribute="leading" id="NjH-BG-caw"/>
-                            <constraint firstItem="Jvu-yh-8OY" firstAttribute="top" secondItem="j4e-1O-VeD" secondAttribute="bottom" constant="8" symbolic="YES" id="Pxk-uk-GFJ"/>
-                            <constraint firstItem="j4e-1O-VeD" firstAttribute="leading" secondItem="Jvu-yh-8OY" secondAttribute="leading" id="UW3-wv-mc7"/>
-                            <constraint firstItem="j4e-1O-VeD" firstAttribute="trailing" secondItem="Jvu-yh-8OY" secondAttribute="trailing" id="gUF-ik-teJ"/>
-                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="trailing" secondItem="j4e-1O-VeD" secondAttribute="trailing" id="igR-j3-Fbu"/>
-                            <constraint firstItem="CFN-nA-N7r" firstAttribute="leading" secondItem="j4e-1O-VeD" secondAttribute="leading" id="kw8-5y-jF0"/>
-                            <constraint firstItem="CFN-nA-N7r" firstAttribute="trailing" secondItem="j4e-1O-VeD" secondAttribute="trailing" id="lOE-yv-ern"/>
-                            <constraint firstItem="j4e-1O-VeD" firstAttribute="firstBaseline" secondItem="CFN-nA-N7r" secondAttribute="firstBaseline" id="sPk-wN-V7X"/>
-                            <constraint firstAttribute="bottom" secondItem="Jvu-yh-8OY" secondAttribute="bottom" constant="20" symbolic="YES" id="t8d-t1-igi"/>
-                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="leading" secondItem="Q33-oq-O7C" secondAttribute="leadingMargin" id="vC0-xV-Ycw"/>
+                            <constraint firstAttribute="bottom" secondItem="Jvu-yh-8OY" secondAttribute="bottom" constant="20" symbolic="YES" id="3Ku-80-XhZ"/>
+                            <constraint firstItem="CFN-nA-N7r" firstAttribute="leading" secondItem="j4e-1O-VeD" secondAttribute="leading" id="BD1-yh-dTb"/>
+                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="top" secondItem="jcp-vI-8Vo" secondAttribute="bottom" id="D8b-uf-oVS"/>
+                            <constraint firstItem="CFN-nA-N7r" firstAttribute="top" secondItem="3ZR-JF-xqJ" secondAttribute="bottom" constant="18" id="DIg-Yi-bCf"/>
+                            <constraint firstAttribute="trailing" secondItem="3ZR-JF-xqJ" secondAttribute="trailing" id="EZK-o8-fSA"/>
+                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="centerX" secondItem="j4e-1O-VeD" secondAttribute="centerX" id="Q1s-1N-5S7"/>
+                            <constraint firstItem="j4e-1O-VeD" firstAttribute="leading" secondItem="Jvu-yh-8OY" secondAttribute="leading" id="QbD-8e-Hkf"/>
+                            <constraint firstItem="j4e-1O-VeD" firstAttribute="trailing" secondItem="Jvu-yh-8OY" secondAttribute="trailing" id="bBf-72-7Rd"/>
+                            <constraint firstItem="CFN-nA-N7r" firstAttribute="trailing" secondItem="j4e-1O-VeD" secondAttribute="trailing" id="dBP-rb-Agy"/>
+                            <constraint firstItem="3ZR-JF-xqJ" firstAttribute="leading" secondItem="Q33-oq-O7C" secondAttribute="leading" id="nC9-UL-FQ2"/>
+                            <constraint firstItem="Jvu-yh-8OY" firstAttribute="top" secondItem="CFN-nA-N7r" secondAttribute="bottom" constant="5" id="o5d-OQ-ake"/>
+                            <constraint firstItem="CFN-nA-N7r" firstAttribute="leading" secondItem="Q33-oq-O7C" secondAttribute="leadingMargin" id="pKl-mk-GA5"/>
+                            <constraint firstItem="j4e-1O-VeD" firstAttribute="firstBaseline" secondItem="CFN-nA-N7r" secondAttribute="firstBaseline" id="wdj-uP-Ofx"/>
+                            <constraint firstItem="Jvu-yh-8OY" firstAttribute="top" secondItem="j4e-1O-VeD" secondAttribute="bottom" constant="8" symbolic="YES" id="zde-SP-3pI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -263,18 +263,18 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pzy-a6-OBu" id="Eyp-um-qg6">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Etg-UV-mU9">
-                                                    <rect key="frame" x="15" y="2" width="36.5" height="23.5"/>
+                                                    <rect key="frame" x="15" y="1" width="37" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AbX-5t-AcN">
-                                                    <rect key="frame" x="15" y="25.5" width="42" height="16.5"/>
+                                                    <rect key="frame" x="15" y="25" width="42" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -316,13 +316,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-NJ-xM0">
-                                <rect key="frame" x="16" y="72" width="343" height="268"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="276"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mF-FU-Wzo">
                                 <rect key="frame" x="16" y="358" width="343" height="40"/>
                                 <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="CpQ-uH-EkB"/>
+                                    <constraint firstAttribute="height" constant="40" id="gb8-Iy-bl1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -332,7 +332,7 @@
                                 <rect key="frame" x="16" y="406" width="343" height="241"/>
                                 <color key="backgroundColor" red="0.92146831750869751" green="0.92162626981735229" blue="0.92145836353302002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="241" id="sqX-2a-rhf"/>
+                                    <constraint firstAttribute="height" constant="241" id="bEb-nb-Zn4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -340,16 +340,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="trailing" secondItem="qte-iy-Agi" secondAttribute="trailing" id="1L3-aG-Xg5"/>
-                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="top" secondItem="XAX-NJ-xM0" secondAttribute="bottom" constant="18" id="GY8-Ev-gwS"/>
-                            <constraint firstItem="qte-iy-Agi" firstAttribute="top" secondItem="5mF-FU-Wzo" secondAttribute="bottom" constant="8" symbolic="YES" id="Kym-Hc-QG2"/>
-                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="leading" secondItem="qte-iy-Agi" secondAttribute="leading" id="N2a-lA-gCg"/>
-                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="trailing" secondItem="5mF-FU-Wzo" secondAttribute="trailing" id="OT3-ix-vrh"/>
-                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="leading" secondItem="ZNf-2S-bN2" secondAttribute="leadingMargin" id="bAl-Mj-mpN"/>
-                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="trailing" secondItem="ZNf-2S-bN2" secondAttribute="trailingMargin" id="fUV-AV-jf3"/>
-                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="leading" secondItem="5mF-FU-Wzo" secondAttribute="leading" id="l4R-eX-o1y"/>
-                            <constraint firstAttribute="bottom" secondItem="qte-iy-Agi" secondAttribute="bottom" constant="20" symbolic="YES" id="m9R-JN-fmS"/>
-                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="top" secondItem="ycI-NA-6yn" secondAttribute="bottom" constant="8" symbolic="YES" id="s7K-YN-cCl"/>
+                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="trailing" secondItem="qte-iy-Agi" secondAttribute="trailing" id="7c2-25-RLM"/>
+                            <constraint firstAttribute="trailing" secondItem="XAX-NJ-xM0" secondAttribute="trailing" id="BFA-fb-fuY"/>
+                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="leading" secondItem="qte-iy-Agi" secondAttribute="leading" id="KxC-LO-gbn"/>
+                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="top" secondItem="XAX-NJ-xM0" secondAttribute="bottom" constant="18" id="XTU-GD-fD5"/>
+                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="top" secondItem="ycI-NA-6yn" secondAttribute="bottom" id="YAw-tZ-7mU"/>
+                            <constraint firstAttribute="bottom" secondItem="qte-iy-Agi" secondAttribute="bottom" constant="20" symbolic="YES" id="ZiH-KZ-ObA"/>
+                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="leading" secondItem="ZNf-2S-bN2" secondAttribute="leading" id="eWn-hT-QuX"/>
+                            <constraint firstItem="5mF-FU-Wzo" firstAttribute="leading" secondItem="ZNf-2S-bN2" secondAttribute="leadingMargin" id="nUd-jU-TWR"/>
+                            <constraint firstItem="qte-iy-Agi" firstAttribute="top" secondItem="5mF-FU-Wzo" secondAttribute="bottom" constant="8" symbolic="YES" id="ovZ-fg-777"/>
+                            <constraint firstItem="XAX-NJ-xM0" firstAttribute="centerX" secondItem="5mF-FU-Wzo" secondAttribute="centerX" id="t8r-ZE-6gI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -402,25 +402,25 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QUO-gG-Zcw" id="WRb-DL-99h">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y2M-kn-uXG">
-                                                    <rect key="frame" x="65" y="2" width="36.5" height="23.5"/>
+                                                    <rect key="frame" x="64" y="1" width="37" height="24"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4bg-l9-9zx">
-                                                    <rect key="frame" x="65" y="25.5" width="42" height="16.5"/>
+                                                    <rect key="frame" x="64" y="25" width="42" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="jezus.jpg" id="7NC-Wp-649">
-                                                    <rect key="frame" x="15" y="0.0" width="35" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="34" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </imageView>
                                             </subviews>
@@ -469,9 +469,9 @@
                                 <rect key="frame" x="16" y="369" width="343" height="241"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="241" id="ZEh-4G-b8V"/>
+                                    <constraint firstAttribute="height" constant="241" id="Z0I-0l-Gzf"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -479,28 +479,28 @@
                                 <rect key="frame" x="16" y="337" width="343" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="kBq-5B-a44"/>
+                                    <constraint firstAttribute="height" constant="32" id="CvC-mt-BhS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xxr-h0-klo">
-                                <rect key="frame" x="16" y="64" width="343" height="273"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="273"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Xxr-h0-klo" firstAttribute="leading" secondItem="Zdw-h9-AOT" secondAttribute="leadingMargin" id="0G6-fH-iuH"/>
-                            <constraint firstItem="aRJ-vi-Taa" firstAttribute="top" secondItem="xSc-3Q-dRJ" secondAttribute="bottom" constant="8" symbolic="YES" id="1gM-Ns-lev"/>
-                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="trailing" secondItem="xSc-3Q-dRJ" secondAttribute="trailing" id="AsG-E3-s5p"/>
-                            <constraint firstItem="Xxr-h0-klo" firstAttribute="trailing" secondItem="hWQ-Mh-cwq" secondAttribute="trailing" id="Png-Wr-nb4"/>
-                            <constraint firstItem="Xxr-h0-klo" firstAttribute="top" secondItem="zoB-xk-6Md" secondAttribute="bottom" id="REu-8i-2DA"/>
-                            <constraint firstItem="Xxr-h0-klo" firstAttribute="trailing" secondItem="Zdw-h9-AOT" secondAttribute="trailingMargin" id="Rhn-R3-7SY"/>
-                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="top" secondItem="Xxr-h0-klo" secondAttribute="bottom" id="X8h-We-BlI"/>
-                            <constraint firstItem="Xxr-h0-klo" firstAttribute="leading" secondItem="hWQ-Mh-cwq" secondAttribute="leading" id="bdJ-Bv-zbs"/>
-                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="leading" secondItem="xSc-3Q-dRJ" secondAttribute="leading" id="uJe-i8-oGB"/>
-                            <constraint firstItem="xSc-3Q-dRJ" firstAttribute="top" secondItem="hWQ-Mh-cwq" secondAttribute="bottom" id="zmo-4f-RHe"/>
+                            <constraint firstItem="Xxr-h0-klo" firstAttribute="centerX" secondItem="hWQ-Mh-cwq" secondAttribute="centerX" id="ENY-r1-8gU"/>
+                            <constraint firstAttribute="trailing" secondItem="Xxr-h0-klo" secondAttribute="trailing" id="HCK-hi-itM"/>
+                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="leading" secondItem="xSc-3Q-dRJ" secondAttribute="leading" id="ejC-mq-bN1"/>
+                            <constraint firstItem="xSc-3Q-dRJ" firstAttribute="top" secondItem="hWQ-Mh-cwq" secondAttribute="bottom" id="epi-Ng-Ex4"/>
+                            <constraint firstItem="Xxr-h0-klo" firstAttribute="leading" secondItem="Zdw-h9-AOT" secondAttribute="leading" id="f7D-um-kNv"/>
+                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="leading" secondItem="Zdw-h9-AOT" secondAttribute="leadingMargin" id="pom-Wr-EGk"/>
+                            <constraint firstItem="aRJ-vi-Taa" firstAttribute="top" secondItem="xSc-3Q-dRJ" secondAttribute="bottom" constant="8" symbolic="YES" id="qSO-jg-N2w"/>
+                            <constraint firstItem="Xxr-h0-klo" firstAttribute="top" secondItem="zoB-xk-6Md" secondAttribute="bottom" id="rnG-Hd-agH"/>
+                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="trailing" secondItem="xSc-3Q-dRJ" secondAttribute="trailing" id="yzq-oz-XWe"/>
+                            <constraint firstItem="hWQ-Mh-cwq" firstAttribute="top" secondItem="Xxr-h0-klo" secondAttribute="bottom" id="zcs-iq-HRI"/>
                         </constraints>
                     </view>
                     <connections>
@@ -525,12 +525,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-np-fLN">
-                                <rect key="frame" x="16" y="72" width="343" height="235"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="235" id="dy7-dQ-ie8"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yJ7-UR-zt7">
                                 <rect key="frame" x="16" y="315" width="343" height="295"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -552,16 +546,22 @@ Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed 
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3gb-np-fLN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="243" id="adX-uq-nw9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3gb-np-fLN" firstAttribute="trailing" secondItem="yJ7-UR-zt7" secondAttribute="trailing" id="4ch-hq-4Kl"/>
-                            <constraint firstItem="3gb-np-fLN" firstAttribute="top" secondItem="0Da-Yo-DMf" secondAttribute="bottom" constant="8" symbolic="YES" id="6pJ-wQ-FwE"/>
-                            <constraint firstItem="7HM-nZ-RXG" firstAttribute="top" secondItem="yJ7-UR-zt7" secondAttribute="bottom" constant="8" symbolic="YES" id="7LG-Uv-B1Q"/>
-                            <constraint firstItem="3gb-np-fLN" firstAttribute="trailing" secondItem="7dQ-Ye-drh" secondAttribute="trailingMargin" id="cmx-Yf-C84"/>
-                            <constraint firstItem="yJ7-UR-zt7" firstAttribute="top" secondItem="3gb-np-fLN" secondAttribute="bottom" constant="8" symbolic="YES" id="kqR-jB-nRO"/>
-                            <constraint firstItem="3gb-np-fLN" firstAttribute="leading" secondItem="yJ7-UR-zt7" secondAttribute="leading" id="tuu-sO-FBY"/>
-                            <constraint firstItem="yJ7-UR-zt7" firstAttribute="leading" secondItem="7dQ-Ye-drh" secondAttribute="leadingMargin" id="u3N-hX-R3p"/>
+                            <constraint firstItem="yJ7-UR-zt7" firstAttribute="top" secondItem="3gb-np-fLN" secondAttribute="bottom" constant="8" symbolic="YES" id="0So-K3-GGd"/>
+                            <constraint firstItem="yJ7-UR-zt7" firstAttribute="leading" secondItem="7dQ-Ye-drh" secondAttribute="leadingMargin" id="5Yd-SX-aFa"/>
+                            <constraint firstItem="7HM-nZ-RXG" firstAttribute="top" secondItem="yJ7-UR-zt7" secondAttribute="bottom" constant="8" symbolic="YES" id="PyA-wZ-VlO"/>
+                            <constraint firstAttribute="trailing" secondItem="3gb-np-fLN" secondAttribute="trailing" id="TNj-2O-kfX"/>
+                            <constraint firstItem="3gb-np-fLN" firstAttribute="centerX" secondItem="yJ7-UR-zt7" secondAttribute="centerX" id="cvX-Jc-RB7"/>
+                            <constraint firstItem="3gb-np-fLN" firstAttribute="leading" secondItem="7dQ-Ye-drh" secondAttribute="leading" id="e0J-y0-PlD"/>
+                            <constraint firstItem="3gb-np-fLN" firstAttribute="top" secondItem="0Da-Yo-DMf" secondAttribute="bottom" id="ya1-om-mrd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="m3h-7J-hhO"/>
