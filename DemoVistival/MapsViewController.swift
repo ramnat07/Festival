@@ -73,11 +73,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         
         
         
-        // wc experiment
         
-        /*let wc3Coord:CLLocationCoordinate2D = CLLocationCoordinate2DMake(51.156599, 2.761545)
-        let wc3Point = MapPoint.init(coord: wc3Coord, title: "WC", imageNaam: "wc.jpg")
-*/
         
         mapView.addAnnotation(stage1Point)
         mapView.addAnnotation(stage2Point)
@@ -91,14 +87,7 @@ class MapsViewController: UIViewController, MKMapViewDelegate {
         
         mapView.addAnnotation(wc1Point)
         mapView.addAnnotation(wc2Point)
-        
-        /*//experiment toevoegen
-        mapView.addAnnotation(wc3Point)
-        */
-        
-        
-        
-        
+               
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

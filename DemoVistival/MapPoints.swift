@@ -16,11 +16,7 @@ class MapPoint:NSObject, MKAnnotation {
     var title: String?
     var image:UIImage?
     
-    /*init(coord:CLLocationCoordinate2D,title:String, imageNaam:String) {
-        self.coordinate = coord
-        self.image = UIImage.init(named: imageNaam)
-        self.pinColor = .clear
-    }*/
+    
     
     init(pinColor:UIColor,coord: CLLocationCoordinate2D, title: String) {
         

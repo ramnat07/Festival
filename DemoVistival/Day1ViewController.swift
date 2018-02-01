@@ -11,11 +11,15 @@ import UIKit
 class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    
+    var artists:[Artist] = ArtistLineUp.artistLineUp
+    var day1List:[Artist] = [Artist]()
     @IBOutlet weak var tableview: UITableView!
     
     
-    var artistLijst:[Artist] = [Artist]()
+    ///////////var artistLijst:[Artist] = [Artist]()
+    
+    
+    
     
     //let formatter = DateFormatter()
     
@@ -26,66 +30,33 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     //dateFormat.dateStyle = .medium
     //let geformateerdeDatum:String = dateFormat.string(from: birthDate)
     
-    func loadArtist() {
+    
+    func dayOne() {
         
-        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
+        for artist in artists {
+            if artist.beginDate == "27/01/2018" {
+                day1List.append(artist)
+            }
+            
+        }
         
-        /*formatter.dateFormat = "dd/MM/yyyy"
-        let day1:Date = formatter.date(from: "27/01/2018")!
-        let day1String:String = formatter.string(from: day1)
-        
-        
-        
-        
-        formatter.dateFormat = "dd/MM/yyyy HH:mm"
-        let hour1:Date = formatter.date(from:"27/01/2018 13:00")!
-        let hour1String:String = formatter.string(from: hour1)
-        
-        
-        let hour2:Date = formatter.date(from: "27/01/2018 13:30")!
-        let hour2String:String = formatter.string(from: hour2)
-        
-        let hour3:Date = formatter.date(from: "27/01/2018 14:00")!
-        let hour3String:String = formatter.string(from: hour3)
-        
-        let hour4:Date = formatter.date(from: "27/01/2018 14:30")!
-        let hour4String:String = formatter.string(from: hour4)
- 
- */
-        
-        /*formatter.dateStyle = .short
-         formatter.timeStyle = .none
-         formatter.locale = Locale.init(identifier: "UK")
-         let geformateerdeDatum:String = formatter.string(from: day1!)
-         
-         */
-        
-        let day1:String = "27/01/2018"
-        let hour1:String = "13:00"
-        let hour2:String = "13:30"
-        let hour3:String = "14:00"
-        let hour4:String = "14:30"
-        
-        var artistDescription:String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        
-        //artistDescription textView opvullen
-        artistDescription += artistDescription + artistDescription
-        
-        
-        artistLijst = [Artist.init(name: "Britney Spears", beginDate: day1, beginHour: hour1, description: artistDescription, stage: Stage.STAGE_1, artistImageName: "britney1.jpg"),                              Artist.init(name: "Celine Dion", beginDate: day1, beginHour:hour2 , description: artistDescription, stage: Stage.STAGE_2, artistImageName: "celine1.jpg"), Artist.init(name: "Madonna", beginDate: day1, beginHour: hour3, description: artistDescription, stage: Stage.STAGE_3, artistImageName: "madonna1.jpg"), Artist.init(name: "Sting", beginDate: day1, beginHour: hour4, description: artistDescription, stage: .STAGE_4, artistImageName: "sting1.jpg")]
-        //scherm opvullen met artiesten
-        artistLijst += artistLijst + artistLijst + artistLijst
         
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+           
+        dayOne()
         
-        loadArtist()
+        
          self.title = "Day One"
      
     }
+    
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -94,13 +65,16 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return artistLijst.count
+        return day1List.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell_1")
         
-        let currentArtist: Artist = artistLijst[indexPath.row]
+        let currentArtist: Artist = day1List[indexPath.row]
         
         cell?.textLabel?.text = currentArtist.name
         cell?.detailTextLabel?.text = currentArtist.beginHour + " on " + currentArtist.stage.rawValue
@@ -122,7 +96,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let cell = sender as! UITableViewCell
         let index = tableview.indexPath(for: cell)?.row
-        let doorTeGevenArtist = artistLijst[index!]
+        let doorTeGevenArtist = day1List[index!]
         
         destination.artist = doorTeGevenArtist
         
