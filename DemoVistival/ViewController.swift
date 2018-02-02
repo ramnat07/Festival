@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     var index:Int = 0
     
     func loadImages() {
-        
+        let img1:UIImage = UIImage.init(named: "Home.png")!
         let img2:UIImage = UIImage.init(named: "Home2.jpg")!
         let img3:UIImage = UIImage.init(named: "Home3.jpg")!
         let img4:UIImage = UIImage.init(named: "Home4.jpg")!
         
-        fotoLijst += [img2,img3,img4]
+        fotoLijst += [img1,img2,img3,img4]
         
         imageview.image = fotoLijst[index]
         
@@ -34,38 +34,7 @@ class ViewController: UIViewController {
     
     func loadArtist() {
         
-        //GEPIKT BIJ   https://stackoverflow.com/questions/24089999/how-do-you-create-a-swift-date-object
-        
-        /*formatter.dateFormat = "dd/MM/yyyy"
-         let day1:Date = formatter.date(from: "27/01/2018")!
-         let day1String:String = formatter.string(from: day1)
-         
-         
-         
-         
-         formatter.dateFormat = "dd/MM/yyyy HH:mm"
-         let hour1:Date = formatter.date(from:"27/01/2018 13:00")!
-         let hour1String:String = formatter.string(from: hour1)
-         
-         
-         let hour2:Date = formatter.date(from: "27/01/2018 13:30")!
-         let hour2String:String = formatter.string(from: hour2)
-         
-         let hour3:Date = formatter.date(from: "27/01/2018 14:00")!
-         let hour3String:String = formatter.string(from: hour3)
-         
-         let hour4:Date = formatter.date(from: "27/01/2018 14:30")!
-         let hour4String:String = formatter.string(from: hour4)
-         
-         */
-        
-        /*formatter.dateStyle = .short
-         formatter.timeStyle = .none
-         formatter.locale = Locale.init(identifier: "UK")
-         let geformateerdeDatum:String = formatter.string(from: day1!)
-         
-         */
-        
+                
         let day1:String = "27/01/2018"
         
         let day2:String = "28/01/2018"
