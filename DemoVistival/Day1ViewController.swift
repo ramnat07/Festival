@@ -16,20 +16,7 @@ class Day1ViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var tableview: UITableView!
     
     
-    ///////////var artistLijst:[Artist] = [Artist]()
-    
-    
-    
-    
-    //let formatter = DateFormatter()
-    
-    //let dateFormat = DateFormatter()
-    
-    
-    // let dateFormat = DateFormatter.init();
-    //dateFormat.dateStyle = .medium
-    //let geformateerdeDatum:String = dateFormat.string(from: birthDate)
-    
+        
     
     func dayOne() {
         
